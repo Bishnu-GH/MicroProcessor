@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8085 Microprocessor Trainer Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="kit-frame">
+            <div class="header">
+                <h1>MICROPROCESSOR TRAINER KIT <span class="highlight">8085</span></h1>
+            </div>
+
+            <div class="display-area">
+                <div class="display-group">
+                    <label>ADDRESS</label>
+                    <div class="seven-segment" id="display-addr">UP</div>
+                </div>
+                <div class="display-group">
+                    <label>DATA</label>
+                    <div class="seven-segment" id="display-data">85</div>
+                </div>
+            </div>
+
+            <div class="keypad-area">
+                <div class="hex-keys">
+                    <button class="key hex" onclick="handleKey('C')">C</button>
+                    <button class="key hex" onclick="handleKey('D')">D</button>
+                    <button class="key hex" onclick="handleKey('E')">E</button>
+                    <button class="key hex" onclick="handleKey('F')">F</button>
+
+                    <button class="key hex" onclick="handleKey('8')">8</button>
+                    <button class="key hex" onclick="handleKey('9')">9</button>
+                    <button class="key hex" onclick="handleKey('A')">A</button>
+                    <button class="key hex" onclick="handleKey('B')">B</button>
+
+                    <button class="key hex" onclick="handleKey('4')">4</button>
+                    <button class="key hex" onclick="handleKey('5')">5</button>
+                    <button class="key hex" onclick="handleKey('6')">6</button>
+                    <button class="key hex" onclick="handleKey('7')">7</button>
+
+                    <button class="key hex" onclick="handleKey('0')">0</button>
+                    <button class="key hex" onclick="handleKey('1')">1</button>
+                    <button class="key hex" onclick="handleKey('2')">2</button>
+                    <button class="key hex" onclick="handleKey('3')">3</button>
+                </div>
+
+                <div class="cmd-keys">
+                    <button class="key cmd" onclick="handleCmd('RES')">RES</button>
+                    <button class="key cmd" onclick="handleCmd('EX MEM')">EX MEM</button>
+                    <button class="key cmd" onclick="handleCmd('EX REG')">EX REG</button>
+                    <button class="key cmd" onclick="handleCmd('NEXT')">NEXT</button>
+                    <button class="key cmd" onclick="handleCmd('PREV')">PREV</button>
+                    <button class="key cmd" onclick="handleCmd('GO')">GO</button>
+                    <button class="key cmd" onclick="handleCmd('EXEC')">EXEC</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
